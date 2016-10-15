@@ -18,6 +18,9 @@ public class helloWorld {
             case 3 : z=3;
                 exe2();
                 break;
+            case 4: z=4;
+                exe2();
+                break;
             default:
                 break;
         }
