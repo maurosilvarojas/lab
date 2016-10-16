@@ -1,12 +1,13 @@
 import javax.swing.*;
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 //lab1 Write a simple program in Java using Eclipse IDE to print the greeting “Hello World” to the console.
 public class helloWorld {
     public static void main(String[] args) {
-       check(10);
+       check(11);
 
     }
 
@@ -51,6 +52,13 @@ public class helloWorld {
     }
 
     private static void exe11() {
+        /*Write a program that generates a random integer in the range 0 to 99
+        inclusive, and then tests and reports whether it is even or odd. [Hint:
+        Use Random Class in Java API]*/
+        int x;
+        Random rdNum = new Random();
+        x=rdNum.nextInt(100);
+        System.out.println("The random number is :"+x);
     }
 
     private static void exe10() {
@@ -58,19 +66,53 @@ public class helloWorld {
         in the ascending order of their lengths.*/
         String[] names= new String[3];
         String[] namesASC= new String[3];
-        String newVar= new String();
-        int var=0;
 
-        Scanner newScan  = new Scanner(System.in);
-        for (int i=0; i<names.length; i++)
+        int var;
+
+        Scanner newScan  = new Scanner(System.in);//new scanner
+        for (int i=0; i<names.length; i++)//loop  gathering data
         {
             System.out.println("Insert name:"+(i+1));
             names[i]=newScan.nextLine();
             var=names[i].length();
             System.out.println(var);
         }
+        int A = names[0].length();
+        int B = names[1].length();
+        int C = names[2].length();
 
-        if (names[0].length() > names[1].length()) {
+        if ((A>B)&&(A>C)&&(B>C)){
+            namesASC[0] = names[2];
+            namesASC[1] = names[1];
+            namesASC[2] = names[0];
+        }
+        else if ((A>B)&&(A>C)&&(B<C)){
+            namesASC[0] = names[2];
+            namesASC[1] = names[0];
+            namesASC[2] = names[1];
+        }
+        else if((A>B)&&(A<C)){
+            namesASC[0] = names[1];
+            namesASC[1] = names[0];
+            namesASC[2] = names[2];
+        }
+        else if ((A<B)&&(B>C)&&(A>C)){
+            namesASC[0] = names[1];
+            namesASC[1] = names[2];
+            namesASC[2] = names[0];
+        }
+        else if((A<B)&&(B>C)&&(A<C)){
+            namesASC[0] = names[0];
+            namesASC[1] = names[2];
+            namesASC[2] = names[1];
+        }
+        else if ((A<B)&&(B<C))
+            namesASC[0] = names[0];
+            namesASC[1] = names[1];
+            namesASC[2] = names[2];
+
+
+        /*if (names[0].length() > names[1].length()) {
             if (names[0].length() > names[2].length()) {
                 if (names[1].length() > names[2].length()) {
                     namesASC[0] = names[2];
@@ -102,7 +144,7 @@ public class helloWorld {
             namesASC[0] = names[0];
             namesASC[1] = names[1];
             namesASC[2] = names[2];
-        }
+        }*/
         for (int i=0; i<namesASC.length; i++)
         {
             System.out.println("");
