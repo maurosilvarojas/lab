@@ -7,7 +7,7 @@ import java.util.Scanner;
 //lab1 Write a simple program in Java using Eclipse IDE to print the greeting “Hello World” to the console.
 public class helloWorld {
     public static void main(String[] args) {
-       check(11);
+       check(10);
 
     }
 
@@ -106,11 +106,11 @@ public class helloWorld {
             namesASC[1] = names[2];
             namesASC[2] = names[1];
         }
-        else if ((A<B)&&(B<C))
+        else if ((A<B)&&(B<C)) {
             namesASC[0] = names[0];
             namesASC[1] = names[1];
             namesASC[2] = names[2];
-
+        }
 
         /*if (names[0].length() > names[1].length()) {
             if (names[0].length() > names[2].length()) {
