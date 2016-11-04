@@ -5,9 +5,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 //lab1 Write a simple program in Java using Eclipse IDE to print the greeting “Hello World” to the console.
-public class helloWorld {
+public class week1 {
     public static void main(String[] args) {
-       check(10);
+        check(10);
 
     }
 
@@ -234,8 +234,8 @@ public class helloWorld {
             System.out.println("Insert Score :"+(i+1));
             scores[i]=newScan.nextInt();
             if (scores[i]>100||scores[i]<0){
-               System.out.println("Number out of range");
-               exe8();
+                System.out.println("Number out of range");
+                exe8();
             }
 
             total=total+scores[i];
@@ -281,12 +281,12 @@ public class helloWorld {
             if (var < numbers[i]){
                 var=numbers[i];
             }
-         }
+        }
         Arrays.sort(numbers);
         System.out.println("\nThe Numbers in ascending order are: \n");
         for (int i=0; i<numbers.length; i++)
         {
-              System.out.println(numbers[i]);
+            System.out.println(numbers[i]);
         }
     }
 
@@ -307,7 +307,7 @@ public class helloWorld {
             }
         }
 
-       System.out.println("The largest number of the three is : " +var);
+        System.out.println("The largest number of the three is : " +var);
 
     }
 
@@ -330,7 +330,7 @@ public class helloWorld {
     }
 
     private static void exe4() {
-       // Write a Java program that asks/reads your name using a dialog box and prints “Hello Your Name” on a message dialog.
+        // Write a Java program that asks/reads your name using a dialog box and prints “Hello Your Name” on a message dialog.
         Scanner newScan  = new Scanner(System.in);
         String name;
         name = JOptionPane.showInputDialog("Insert your name");
@@ -358,11 +358,11 @@ public class helloWorld {
 //        Don’t forget to use \” to print “” on your console
 //        Note that there are 2 blank lines in this output.
 
-          System.out.println("A \2 quoted  \" String is much better \nif you learn the rules of escape sequences");
-          System.out.println(" ");
-          System.out.println("Also, \"\" represent an empty string");
-          System.out.println("");
-          System.out.println("Don’t forget to use \\\" to print \"\" on your console \nNote that there are 2 blank lines in this output.");
+        System.out.println("A \2 quoted  \" String is much better \nif you learn the rules of escape sequences");
+        System.out.println(" ");
+        System.out.println("Also, \"\" represent an empty string");
+        System.out.println("");
+        System.out.println("Don’t forget to use \\\" to print \"\" on your console \nNote that there are 2 blank lines in this output.");
     }
 
     public static void exe1() {

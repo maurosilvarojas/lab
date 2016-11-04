@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class week2 {
     public static void main(String[] args) {
-        System.out.println("testing");
-        exe2();
+
+        exe1();
     }
 
     private static void exe2() {
@@ -27,6 +27,7 @@ public class week2 {
         }while (x!=-1);
         System.out.println("Total Sum: " + counter);
     }
+
 
 
 }
